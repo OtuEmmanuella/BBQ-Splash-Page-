@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+/*==typography==*/
+
+body {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+   
+}
+
+h1 + p {
+   font-size: 1.3125rem;
+   font-weight: 900;
+   color: #f18119;
+   text-transform: uppercase;
+
+}
+
+h2 {
+    font-size: 1.3125rem;
+   
+    
+}
+
+h2 + p {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    color: #f18119;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.top-text {
+    font-weight: 900;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    padding-top: 2px;
+    border-top: 5px solid #f18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    letter-spacing: 1px;
+    color: #f18119;
+    order: -1;
+}
+    
+
+.print-text {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/*==intro==*/
+
+.intro {
+    background-color: #404040;
+    background-image: url(../images/dark-ribs.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+}  
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    min-height: 50vh;
+}
+
+.main-content {
+    margin: 2em 1em;
+}
+
+/*form*/
+
+form {
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+input,
+.btn {
+    width: 100%;
+}
+
+input {
+   border: 1px solid #404040;
+   border-radius: 5px; 
+   padding: .5em 1.5em;
+   margin-bottom: 1em;
+   text-align: center;
+   cursor: pointer;
+   transform: scale(1);
+   transition: 250ms;
+}
+
+.btn {
+    font-size: 00.625rem;
+    font-weight: 900;
+    display: inline;
+    border: 0;
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    color: #fff;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    transform: scale(1);
+   transition: color 250ms;
+}
+
+input:focus {
+   transform: scale(1.1);
+}
+
+.btn:hover,
+.btn:focus {
+   transform: scale(1.1);
+   color: #404040;
+}
+
+/*==media queries==*/
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        font-size: 1.125rem; 
+         min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;  
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-intro {
+        height: 100%;
+    }     
+    
+}
